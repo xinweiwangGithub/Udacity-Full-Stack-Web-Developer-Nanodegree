@@ -7,3 +7,8 @@
 You will write server-side code to store a list of your favorite movies, including box art imagery and a movie trailer URL. You will then use your code to generate a static web page allowing visitors to browse their movies and watch the trailers.
 
 The Movie Trailer Website project consists of server-side code to store a list of movies titles, along with its respective box art imagery and movie trailer website. The data should be served as a web page allowing visitors to review the movies and watch the trailers.
+
+# How to run
+
+Download the whole project file, open entertainment_center.py file with a python IDE, run it to see the website.
+Click on the poster images to see their trailers.
