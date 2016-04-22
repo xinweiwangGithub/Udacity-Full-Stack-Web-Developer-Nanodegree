@@ -11,20 +11,25 @@ def connect():
     return psycopg2.connect("dbname=tournament")
 
 
-def commitSt():
-    """"""
+def commitSQL(sql):
+    """execute the sql and commit it"""
+    db = psycopg2.connect("tournament")
+    c = db.cursor()
+    c.execute(sql)
+    db.commit()
+    db.close()
 
 def deleteMatches():
     """Remove all the match records from the database."""
-
+    commitSQL("delete from matches;")
 
 def deletePlayers():
     """Remove all the player records from the database."""
-
+    commitSQL("delete from players;")
 
 def countPlayers():
     """Returns the number of players currently registered."""
-
+    commitSQL("")
 
 def registerPlayer(name):
     """Adds a player to the tournament database.

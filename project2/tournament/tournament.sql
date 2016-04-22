@@ -7,7 +7,7 @@
 -- these lines here.
 
 
-CREATE TABLE posts ( content TEXT,
-                     time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                     id SERIAL );
+CREATE TABLE players ( id TEXT,
+                       name TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
 
+CREATE TABLE matches ();
